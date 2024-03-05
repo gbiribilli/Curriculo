@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body{
+    background-color: rgb(24, 26, 27);
+}
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    Color: #fff;
+} 
+body{
+    min-height: 100vh;
+
+}
+
+.header{
+    position: relative;
+    top:0;
+    left:0;
+    width: 100%;
+    padding: 20px 100px;
+    background: transparent;
+   display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar a{
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+
+}
+
+
+.tudo{
+    margin: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+.tudo .portfolio {
+    width: 200px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.tudo .portfolio h1 {
+    text-align:center;
+}
+
+.tudo .portfolio p{
+    margin-top: 10px
+}
+.image {
+    text-align: center;
+}
+
+.tudo .portfolio p{
+   
+    animation-name: Deslizadireta;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+}
+
+.tudo .portfolio h1{
+    animation-name: slideInLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+}
+
+.image
+{
+    
+    animation-name: subir;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+}
+.image img{
+    margin-top: 30px;
+    height: 200px;
+    width: 200px;
+}
+
+@keyframes slideInLeft{
+    from{
+      transform: translateX(-300px);
+    }
+
+    to{
+     transform: translateX(0);
+    }
+}
+
+@keyframes Deslizadireta {
+    from{
+        transform: translateX(300px);
+    }
+
+    to{
+        transform: translateX(0);
+    }
+}
+
+@keyframes subir{
+    from{
+        transform: translateY(300px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+ 
